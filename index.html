@@ -30,7 +30,7 @@
                  <div class="thumbs">
                     <div @click='clickBack' class="prev"></div>
                     <div @click='clickNext' class="next"></div>
-                     <div v-for= 'element, i in slides' class="thumb" :class="thumbActive(i)">
+                     <div @click="connectedImg(i)" v-for= 'element, i in slides' class="thumb" :class="thumbActive(i)">
                         <img :src="element.image" alt="" />
                     </div> 
                    <!--<div class="thumb active">

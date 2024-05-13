@@ -60,5 +60,8 @@ createApp({
         this.classActive = 4
       }
     },
+    connectedImg(index){
+      this.classActive = index;
+    },
   },
 }).mount("#app");
